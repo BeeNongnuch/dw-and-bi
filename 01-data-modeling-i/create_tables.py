@@ -12,6 +12,10 @@ table_drop_actors = "DROP TABLE IF EXISTS actors"
 table_create_actors = """
     CREATE TABLE IF NOT EXISTS actors (
         id int,
+        login text,
+        PRIMARY KEY(id)
+
+        
         name varchar(255),
         email varchar(255),
         password varchar(255),
