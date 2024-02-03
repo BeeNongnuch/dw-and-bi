@@ -16,11 +16,11 @@ table_drop_events = "DROP TABLE IF EXISTS events"
 table_create_actors = """
     CREATE TABLE IF NOT EXISTS actors (
         actor_id int,
-        actor_login vachar(100),
-        display_login vachar(100),
-        actor_gravatar_id vachar(100),
-        actor_url vachar(255),
-        actor_avatar_url vachar(255),
+        actor_login varchar(100),
+        display_login varchar(100),
+        actor_gravatar_id varchar(100),
+        actor_url varchar(255),
+        actor_avatar_url varchar(255),
         PRIMARY KEY(actor_id)
     )
 """
@@ -40,7 +40,7 @@ table_create_org = """
         org_login varchar(100),
         org_gravatar_id varchar(100),
         org_url varchar(255),
-        org_avatar_urlvarchar(255),
+        org_avatar_url varchar(255),
         PRIMARY KEY(org_id)
     )
 """
@@ -89,14 +89,14 @@ create_table_queries = [
     table_create_actors,
     table_create_repo,
     table_create_org,
-    table_drop_payload,
+    table_create_payload,
     table_create_events,
 ]
 drop_table_queries = [
     table_create_actors,
     table_create_repo,
     table_create_org,
-    table_drop_payload,
+    table_create_payload,
     table_create_events,
 ]
 
